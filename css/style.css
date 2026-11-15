@@ -1,1 +1,22 @@
-
+/* White, silver, royal blue, gold and a little red */
+:root {
+    --bs-primary-bg: #0b3d91;
+    --bs-primary-fg: #0b3d91;
+    --bs-primary-fg-emphasis: #082a66;
+    --bs-primary-border: #0b3d91;
+    --bs-primary-focus-ring: #c9a227;
+    --bs-primary-contrast: #ffffff;
+}
+body { background-color: #ffffff; }
+/* Grey nav with a silver edge */
+.navbar { background-color: #e6e8ec !important; border-bottom: 2px solid #c0c4cc; }
+/* Gold buttons with dark blue text */
+.btn-solid.theme-primary {
+    --bs-theme-bg: #c9a227;
+    --bs-theme-border: #c9a227;
+    --bs-theme-contrast: #0a1f4d;
+}
+/* Silver edges on cards, red line above the footer */
+.card { border: 2px solid #c0c4cc; }
+.card-body { background-color: #e6e8ec; }
+footer > div { border-top: 4px solid #c8102e; }
