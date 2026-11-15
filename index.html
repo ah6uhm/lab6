@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css"/>
     <script type="module" src="js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <nav class="navbar md:navbar-expand bg-1 fg-2">
         <div class="container-fluid">
@@ -79,9 +79,269 @@
             <a class="btn-solid theme-primary" href="#shop">Shop the collection</a>
         </div>
     </div>
+        
+     
+        <div class="container mt-5 pt-5 pb-5">
+        <h2 id="shop">Shop the Collection</h2>
 
-    <footer class="container-fluid mt-5">
-        <p class="p-3 bg-primary fg-contrast-primary text-center">&copy; CCT360 Lab 6</p>
+        <div class="row g-4">
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+                    <img src="images/jersey-home.webp" class="card-img-top" alt="White football home jersey">
+                    <div class="card-body">
+                        <h3 class="card-title">Home Jersey</h3>
+                        <p class="card-text">White short-sleeve match jersey with blue trim. USD 89.99</p>
+
+                        <div class="accordion">
+                            <details class="accordion-item">
+                                <summary class="accordion-header">
+                                    Details
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    <p class="card-text">Lightweight breathable fabric. Sizes S to XXL. Machine wash cold and do not iron the print.</p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-jersey-home">
+                            Add to cart
+                        </button>
+
+                        <dialog class="dialog" id="dialog-jersey-home">
+                            <div class="dialog-header">
+                                <h2 class="dialog-title">Home Jersey</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                            </div>
+                            <div class="dialog-body">
+                                <p>Home Jersey has been added to your cart. This is a class project, so no items are actually sold.</p>
+                            </div>
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+                    <img src="images/jersey-away.jpg" class="card-img-top" alt="Football away jersey">
+                    <div class="card-body">
+                        <h3 class="card-title">Away Jersey</h3>
+                        <p class="card-text">Bold alternate kit for away days. USD 89.99</p>
+
+                        <div class="accordion">
+                            <details class="accordion-item">
+                                <summary class="accordion-header">
+                                    Details
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    <p class="card-text">Relaxed fit with moisture-wicking fabric. Sizes S to XXL. Wash inside out to protect the print.</p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-jersey-away">
+                            Add to cart
+                        </button>
+
+                        <dialog class="dialog" id="dialog-jersey-away">
+                            <div class="dialog-header">
+                                <h2 class="dialog-title">Away Jersey</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                            </div>
+                            <div class="dialog-body">
+                                <p>Away Jersey has been added to your cart. This is a class project, so no items are actually sold.</p>
+                            </div>
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+                    <img src="images/match-ball.webp" class="card-img-top" alt="Football match ball">
+                    <div class="card-body">
+                        <h3 class="card-title">Match Ball</h3>
+                        <p class="card-text">A size 5 ball built for firm pitches and weekend leagues. USD 34.99</p>
+
+                        <div class="accordion">
+                            <details class="accordion-item">
+                                <summary class="accordion-header">
+                                    Details
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    <p class="card-text">Size 5, 32 panels, thermal-bonded seams. Inflate to 8 to 12 psi before kickoff.</p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-ball">
+                            Add to cart
+                        </button>
+
+                        <dialog class="dialog" id="dialog-ball">
+                            <div class="dialog-header">
+                                <h2 class="dialog-title">Match Ball</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                            </div>
+                            <div class="dialog-body">
+                                <p>Match Ball has been added to your cart. This is a class project, so no items are actually sold.</p>
+                            </div>
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+                    <img src="images/gk-gloves.webp" class="card-img-top" alt="Pair of goalkeeper gloves">
+                    <div class="card-body">
+                        <h3 class="card-title">Goalkeeper Gloves</h3>
+                        <p class="card-text">Soft latex palms and a snug wrist strap for confident catches. USD 39.99</p>
+
+                        <div class="accordion">
+                            <details class="accordion-item">
+                                <summary class="accordion-header">
+                                    Details
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    <p class="card-text">Latex grip palm with finger protection. Order one size up for a looser fit. Rinse with cold water after use.</p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-gloves">
+                            Add to cart
+                        </button>
+
+                        <dialog class="dialog" id="dialog-gloves">
+                            <div class="dialog-header">
+                                <h2 class="dialog-title">Goalkeeper Gloves</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                            </div>
+                            <div class="dialog-body">
+                                <p>Goalkeeper Gloves has been added to your cart. This is a class project, so no items are actually sold.</p>
+                            </div>
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+                    <img src="images/boots.webp" class="card-img-top" alt="Pair of football boots">
+                    <div class="card-body">
+                        <h3 class="card-title">Football Boots</h3>
+                        <p class="card-text">Firm-ground boots with a light upper for quick footwork. USD 119.99</p>
+
+                        <div class="accordion">
+                            <details class="accordion-item">
+                                <summary class="accordion-header">
+                                    Details
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    <p class="card-text">Moulded studs for natural grass. Sizes 6 to 13. Air dry away from heat.</p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-boots">
+                            Add to cart
+                        </button>
+
+                        <dialog class="dialog" id="dialog-boots">
+                            <div class="dialog-header">
+                                <h2 class="dialog-title">Football Boots</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                            </div>
+                            <div class="dialog-body">
+                                <p>Football Boots has been added to your cart. This is a class project, so no items are actually sold.</p>
+                            </div>
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+                    <img src="images/scarf.jpg" class="card-img-top" alt="Knitted supporter scarf">
+                    <div class="card-body">
+                        <h3 class="card-title">Supporter Scarf</h3>
+                        <p class="card-text">A warm knitted scarf for cold terrace nights. USD 24.99</p>
+
+                        <div class="accordion">
+                            <details class="accordion-item">
+                                <summary class="accordion-header">
+                                    Details
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    <p class="card-text">Acrylic knit, 150 cm long. Hand wash only. A good gift for any supporter.</p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-scarf">
+                            Add to cart
+                        </button>
+
+                        <dialog class="dialog" id="dialog-scarf">
+                            <div class="dialog-header">
+                                <h2 class="dialog-title">Supporter Scarf</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                            </div>
+                            <div class="dialog-body">
+                                <p>Supporter Scarf has been added to your cart. This is a class project, so no items are actually sold.</p>
+                            </div>
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                            </div>
+                        </dialog>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="mt-auto">
+        <div class="p-3 bg-primary fg-contrast-primary text-center">
+            <p class="mb-0">&copy; CCT360 Lab 6</p>
+            <details class="small mt-2">
+                <summary>Photo credits</summary>
+                    <ul class="list-unstyled mt-2">
+                        <li>Logo: <a href="https://logos-world.net/real-madrid-logo/" target="_blank" rel="noopener">logos-world.net</a></li>
+                        <li>Banner, kits: <a href="https://i.pinimg.com/736x/1f/4f/cd/1f4fcd56f6e38ea1452296524b5b32e5.jpg" target="_blank" rel="noopener">Pinterest</a></li>
+                        <li>Banner, matchday: <a href="https://c8.alamy.com/comp/JA6X6Y/madrid-spain-4th-june-2017-real-madrid-fans-in-santiago-bernabeu-stadium-JA6X6Y.jpg" target="_blank" rel="noopener">Alamy</a></li>
+                        <li>Banner, player: <a href="https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_167,w_3137,h_1764/c_fill,w_2160,ar_16:9,f_auto,q_auto,g_auto/images%2FvoltaxMediaLibrary%2Fmmsport%2Freal_madrid_cf_on_si%2F01jhzt29c54003r4z2pd.jpg" target="_blank" rel="noopener">Minute Media</a></li>
+                        <li>Home jersey: <a href="https://us.shop.realmadrid.com/cdn/shop/files/JZ7218_01.jpg?v=1779796490" target="_blank" rel="noopener">Real Madrid shop</a></li>
+                        <li>Away jersey: <a href="https://us.shop.realmadrid.com/cdn/shop/files/KQ6946_1_APPAREL_Photography_FrontCenterView_white.jpg?v=1785320426" target="_blank" rel="noopener">Real Madrid shop</a></li>
+                        <li>Match ball: <a href="https://us.shop.realmadrid.com/cdn/shop/files/KX4250_1_HARDWARE_Photography_FrontView_white.jpg?v=1784648344" target="_blank" rel="noopener">Real Madrid shop</a></li>
+                        <li>Goalkeeper gloves: <a href="https://us.shop.realmadrid.com/cdn/shop/files/image_054fad21-d80f-4c29-9968-423da93480a4.jpg?v=1767815365" target="_blank" rel="noopener">Real Madrid shop</a></li>
+                        <li>Boots: <a href="https://us.shop.realmadrid.com/cdn/shop/files/image_f8735f5b-c82d-4411-97cc-e6076882b912.jpg?v=1768062098" target="_blank" rel="noopener">Real Madrid shop</a></li>
+                        <li>Scarf: <a href="https://us.shop.realmadrid.com/cdn/shop/files/KQ9823_1_HARDWARE_Photography_FrontCenterView_white.jpg?v=1779719796" target="_blank" rel="noopener">Real Madrid shop</a></li>
+                    </ul>
+            </details>
+        </div>
     </footer>
 
 </body>
